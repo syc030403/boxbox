@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="f1_red">#E10600</color>
+    <color name="f1_black">#15151E</color>
+    <color name="f1_white">#FFFFFF</color>
+    <color name="f1_gray">#38383F</color>
+    <color name="status_done">#4CAF50</color>
+    <color name="status_upcoming">#E10600</color>
+</resources>

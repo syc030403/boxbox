@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boxbox</string>
+    <string name="season_title">%1$d 시즌 캘린더</string>
+    <string name="season_picker">시즌 선택</string>
+    <string name="standings_menu_label">순위</string>
+    <string name="offline_banner">오프라인 · %1$s 기준 데이터</string>
+    <string name="status_done">완료</string>
+    <string name="status_upcoming">예정</string>
+    <string name="loading">일정을 불러오는 중…</string>
+    <string name="error_loading">일정을 불러오지 못했습니다. 다시 시도해주세요.</string>
+    <string name="session_fp1">1차 연습주행 (FP1)</string>
+    <string name="session_fp2">2차 연습주행 (FP2)</string>
+    <string name="session_fp3">3차 연습주행 (FP3)</string>
+    <string name="session_qualifying">예선 (Qualifying)</string>
+    <string name="session_sprint_qualifying">스프린트 예선</string>
+    <string name="session_sprint">스프린트</string>
+    <string name="session_race">결선 (Race)</string>
+    <string name="standings_title">%1$d 시즌 순위</string>
+    <string name="tab_drivers">드라이버</string>
+    <string name="tab_constructors">컨스트럭터</string>
+
+    <string name="notification_channel_name">레이스 알림</string>
+    <string name="notification_channel_description">설정한 레이스 시작 전 알림</string>
+    <string name="reminder_notification_text">%1$s 후 %2$s 시작</string>
+    <string name="offset_days">%1$d일</string>
+    <string name="offset_hours">%1$d시간</string>
+    <string name="offset_minutes">%1$d분</string>
+
+    <string name="reminder_dialog_title_session">%1$s 알림 받을 시점 선택</string>
+    <string name="offset_minutes_before">%1$s 전</string>
+    <string name="reminder_button_label">알림</string>
+    <string name="reminder_set_toast">%1$d개 알림이 설정됐습니다</string>
+    <string name="reminder_permission_denied">알림 권한이 없어서 설정할 수 없습니다</string>
+    <string name="reminder_exact_alarm_denied">정확한 알람 권한이 필요합니다</string>
+</resources>

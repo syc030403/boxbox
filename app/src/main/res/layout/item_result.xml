@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/f1_gray"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/accentBar"
+        android:layout_width="3dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/positionText"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/saira_condensed_black"
+        android:textColor="@color/f1_red"
+        android:textSize="20sp"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/teamChip"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_team_chip"
+        android:fontFamily="@font/saira_condensed_bold"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:minWidth="36dp"
+        android:paddingHorizontal="4dp"
+        android:textColor="@color/f1_black"
+        android:textSize="10sp"
+        tools:text="RBR" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingVertical="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/driverNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/saira_condensed_bold"
+            android:textColor="@color/f1_white"
+            android:textSize="16sp"
+            tools:text="Max Verstappen" />
+
+        <TextView
+            android:id="@+id/constructorNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/saira_condensed_semibold"
+            android:textColor="#B0B0B8"
+            android:textSize="13sp"
+            tools:text="Red Bull" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/resultStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:textColor="@color/f1_white"
+            android:textSize="13sp"
+            tools:text="+5.123s" />
+
+        <TextView
+            android:id="@+id/pointsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/saira_condensed_semibold"
+            android:letterSpacing="0.04"
+            android:textColor="#808088"
+            android:textSize="12sp"
+            tools:text="25 PTS" />
+
+    </LinearLayout>
+
+</LinearLayout>

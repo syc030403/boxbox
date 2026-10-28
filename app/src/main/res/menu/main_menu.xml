@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_season"
+        android:title="@string/season_picker"
+        app:actionLayout="@layout/view_season_button"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_standings"
+        android:icon="@drawable/ic_standings"
+        android:title="@string/standings_menu_label"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/f1_black"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/f1_black">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/f1_black"
+            app:navigationIcon="@drawable/ic_back"
+            app:titleTextAppearance="@style/ToolbarTitle.Boxbox"
+            app:titleTextColor="@color/f1_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/f1_red" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/roundText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/saira_condensed_bold"
+                    android:letterSpacing="0.06"
+                    android:textColor="@color/f1_red"
+                    android:textSize="15sp"
+                    tools:text="ROUND 01" />
+
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_team_chip"
+                    android:fontFamily="@font/saira_condensed_bold"
+                    android:gravity="center"
+                    android:letterSpacing="0.06"
+                    android:paddingHorizontal="8dp"
+                    android:textSize="11sp"
+                    tools:text="예정" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/raceNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/saira_condensed_black"
+                android:textColor="@color/f1_white"
+                android:textSize="30sp"
+                tools:text="Australian Grand Prix" />
+
+            <TextView
+                android:id="@+id/circuitNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/saira_condensed_semibold"
+                android:textColor="#B0B0B8"
+                android:textSize="17sp"
+                tools:text="Albert Park Grand Prix Circuit" />
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#808088"
+                android:textSize="14sp"
+                tools:text="Melbourne, Australia" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="20dp"
+                android:background="@color/f1_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/saira_condensed_bold"
+                android:letterSpacing="0.04"
+                android:text="세션 일정 (KST)"
+                android:textColor="@color/f1_white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/sessionListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/resultsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="@color/f1_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/saira_condensed_bold"
+                    android:letterSpacing="0.04"
+                    android:text="경기 결과"
+                    android:textColor="@color/f1_white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/offlineBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/f1_gray"
+                    android:fontFamily="@font/saira_condensed_semibold"
+                    android:gravity="center"
+                    android:letterSpacing="0.02"
+                    android:padding="8dp"
+                    android:textColor="#F0C040"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    tools:text="오프라인 · 10.28 14:00 기준 데이터"
+                    tools:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/resultsProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:indeterminateTint="@color/f1_red" />
+
+                <TextView
+                    android:id="@+id/resultsErrorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/error_loading"
+                    android:textColor="@color/f1_white"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/resultsListLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/f1_gray"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="14dp">
+
+    <TextView
+        android:id="@+id/sessionNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/f1_white"
+        android:textSize="15sp"
+        tools:text="예선 (Qualifying)" />
+
+    <TextView
+        android:id="@+id/sessionTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="#B0B0B8"
+        android:textSize="13sp"
+        tools:text="2026.03.07 (토) 12:00 KST" />
+
+    <ImageView
+        android:id="@+id/sessionReminderButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/reminder_button_label"
+        android:focusable="true"
+        android:padding="8dp"
+        android:src="@drawable/ic_bell_outline"
+        app:tint="#808088" />
+
+</LinearLayout>
