@@ -4,6 +4,8 @@ F1 2026 시즌을 추적하는 안드로이드 앱입니다. 캘린더, 레이�
 
 Kotlin + 전통적인 XML View 방식(Jetpack Compose 미사용)으로 만들었고, [Jolpica F1 API](https://jolpi.ca/)(Ergast 호환 공개 API)를 데이터 소스로 사용합니다.
 
+**[⬇️ APK 다운로드 (v1.0)](https://github.com/syc030403/boxbox/releases/latest)**
+
 <p align="center">
   <img src="docs/screenshots/calendar.png" width="23%" />
   <img src="docs/screenshots/detail.png" width="23%" />
